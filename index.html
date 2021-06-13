@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Özarda Bilişim Teknoloji Ortağınız</title>
+<link href="stilim.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="responsiveslides.css">
+  <link rel="stylesheet" href="demo.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+        maxwidth: 800,
+        speed: 800
+      });
+
+      // Slideshow 2
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        maxwidth: 540
+      });
+
+      // Slideshow 3
+      $("#slider3").responsiveSlides({
+        manualControls: '#slider3-pager',
+        maxwidth: 540
+      });
+
+      // Slideshow 4
+      $("#slider4").responsiveSlides({
+        auto: true,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+<div id="tum">
+  <div id="ust">
+    <div class="logo"> <img src="images/tec.png" width="339" height="140" alt="tec" /></div>
+  	<div class="sagust"><a href="hakkimizda.html">Hakkımızda</a>  | <a href="iletisim.html">İletişim </a><img src="images/FaceBook-icon.png" width="30" height="30" /><img src="images/Twitter_icon_logo.png" alt="" width="30" /></div>
+  </div>
+  <div class="ustmenu">
+    <ul>
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="pc-parcalari.html">PC Parçaları</a></li>
+      <li><a href="pc-sistemleri.html">PC Sistemleri</a></li>
+      <li><a href="network-urunler.html">Network Ürünleri</a></li>
+      <li class="sonmenu"><a href="hizmetler.html">Hizmetler</a></li>
+    </ul>
+  </div>
+  
+  <div id="wrapper">
+  	<!-- Slideshow 4 -->
+    <div class="callbacks_container">
+      <ul class="rslides" id="slider4">
+        <li>
+          <img src="images/1.jpg" alt="">
+          <p class="caption">Bu 1. resim</p>
+        </li>
+        <li>
+          <img src="images/2.jpg" alt="">
+          <p class="caption">This is another caption</p>
+        </li>
+        <li>
+          <img src="images/3.jpg" alt="">
+          <p class="caption">The third caption</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="panel">
+    <img src="images/Computer.png" width="128" height="128" alt="Bilgisayar Toplayın" /><h3>PC TOPLAYIN</h3>
+    İşlemci, anakart, RAM gibi parçaları seçerek size en uygun bilgisayar donanımınızı oluşturun
+    <br />
+  <a href="pctoplama.html">Devamı...</a></div>
+  <div class="panel">
+    <img src="images/Network.png" width="128" height="128" alt="Bilgisayar Toplayın" />
+    <h3>NETWORK HİZMETLERİ</h3>
+    Ofisiniz, işyeriniz, eviniz
+  için en modern teknoloji ile bilgisayarlarınızı birbirine bağlıyoruz.<br />
+  <a href="netowrk-hizmetleri.html">Devamı...</a></div>
+  <div class="panel">
+    <img src="images/Phone.png" width="128" height="128" alt="Bilgisayar Toplayın" />
+    <h3>TELEFONLA SİPARİŞ</h3>
+    Haftaiçi 08.00 ile 18.00 arası çağrı merkezimiz hizmetinizde.<br />
+    444 0 FIL<br />
+  444 0 345</div>
+  <div class="alt">
+    <hr />
+    <ul>
+      <li><a href="index.html">Anasayfa</a></li>
+      <li><a href="pc-parcalari.html">PC Parçaları</a></li>
+      <li><a href="pc-sistemleri.html">PC Sistemleri</a></li>
+      <li><a href="network-urunler.html">Network Ürünleri</a></li>
+      <li class="sonmenu"><a href="hizmetler.html">Hizmetler</a></li>
+    </ul>
+    <br />
+    <br />
+    Özarda Bilişim &copy; 2014<br />
+  Hortum Sk. Fildişi Apt. No:3 A
+  Mecidiyeköy İstanbul<br />
+  info@ozardabilisim.com
+  </div>
+</div>
+
+</body>
+</html>
